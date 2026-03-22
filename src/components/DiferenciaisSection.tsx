@@ -30,6 +30,7 @@ const diferenciais = [
 
 const DiferenciaisSection = () => (
   <section
+    id="diferenciais"
     className="py-20 md:py-28 relative overflow-hidden"
     style={{
       background:

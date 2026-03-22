@@ -27,6 +27,7 @@ const fireGACall = (label: string) => {
 
 const CtaSection = () => (
   <section
+    id="contato"
     className="py-20 md:py-28 relative overflow-hidden"
     style={{
       background:

@@ -5,9 +5,12 @@ import ResultsSection from "@/components/ResultsSection";
 import DepoimentosSection from "@/components/DepoimentosSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
+import TopSectionsNav from "@/components/TopSectionsNav";
 
 const Index = () => (
-  <main>
+  <>
+    <TopSectionsNav />
+    <main className="pt-16 md:pt-[3.5rem]">
     <HeroSection />
     <ServicosSection />
     <DiferenciaisSection />
@@ -15,7 +18,8 @@ const Index = () => (
     <DepoimentosSection />
     <CtaSection />
     <Footer />
-  </main>
+    </main>
+  </>
 );
 
 export default Index;

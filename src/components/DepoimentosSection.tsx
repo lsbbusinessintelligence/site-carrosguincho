@@ -12,6 +12,7 @@ const avaliacoes = [
 
 const DepoimentosSection = () => (
   <section
+    id="avaliacoes"
     className="py-20 md:py-28 relative overflow-hidden"
     style={{
       background:

@@ -50,6 +50,7 @@ const fotos = [
 
 const ResultsSection = () => (
   <section
+    id="resultados"
     className="py-20 md:py-28 relative overflow-hidden"
     style={{ background: "hsl(210 15% 6%)" }}
   >

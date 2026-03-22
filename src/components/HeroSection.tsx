@@ -26,7 +26,7 @@ const fireGACall = (label: string) => {
 };
 
 const HeroSection = () => (
-  <section className="hero-gradient relative overflow-hidden min-h-screen flex items-center">
+  <section id="home" className="hero-gradient relative overflow-hidden min-h-screen flex items-center">
     {/* Metal texture overlay */}
     <div className="absolute inset-0 pointer-events-none">
       <div

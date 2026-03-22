@@ -62,6 +62,7 @@ const servicos = [
 
 const ServicosSection = () => (
   <section
+    id="servicos"
     className="py-20 md:py-28 relative overflow-hidden"
     style={{ background: "hsl(210 15% 7%)" }}
   >
