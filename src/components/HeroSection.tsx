@@ -158,10 +158,10 @@ const HeroSection = () => (
             <div className="flex flex-col sm:flex-row gap-2">
               <a
                 href={PHONE_1}
-                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-sm font-body font-semibold text-[hsl(210_10%_80%)] text-base transition-all duration-200 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-sm font-body font-semibold text-black text-base transition-all duration-200"
                 style={{
-                  background: "hsl(210 15% 13%)",
-                  border: "1px solid hsl(210 15% 25%)",
+                  background: "#BFEFFF",
+                  border: "2px solid #000000",
                 }}
                 onClick={() => fireGACall("ligação_numero1_hero")}
               >
@@ -170,10 +170,10 @@ const HeroSection = () => (
               </a>
               <a
                 href={PHONE_2}
-                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-sm font-body font-semibold text-[hsl(210_10%_80%)] text-base transition-all duration-200 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-sm font-body font-semibold text-black text-base transition-all duration-200"
                 style={{
-                  background: "hsl(210 15% 13%)",
-                  border: "1px solid hsl(210 15% 25%)",
+                  background: "#BFEFFF",
+                  border: "2px solid #000000",
                 }}
                 onClick={() => fireGACall("ligação_numero2_hero")}
               >

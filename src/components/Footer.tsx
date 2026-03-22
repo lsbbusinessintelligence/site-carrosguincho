@@ -79,13 +79,15 @@ const Footer = () => (
               <div>
                 <a
                   href="tel:+5577988148551"
-                  className="block text-[hsl(210_10%_70%)] text-sm font-body hover:text-white transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm text-sm font-body font-semibold text-black transition-all hover:brightness-95 mb-1"
+                  style={{ background: "#BFEFFF", border: "2px solid #000000" }}
                 >
                   (77) 98814-8551
                 </a>
                 <a
                   href="tel:+5577991530506"
-                  className="block text-[hsl(210_10%_70%)] text-sm font-body hover:text-white transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm text-sm font-body font-semibold text-black transition-all hover:brightness-95"
+                  style={{ background: "#BFEFFF", border: "2px solid #000000" }}
                 >
                   (77) 99153-0506
                 </a>

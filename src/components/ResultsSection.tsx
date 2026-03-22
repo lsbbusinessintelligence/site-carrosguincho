@@ -166,48 +166,7 @@ const ResultsSection = () => (
         ))}
       </div>
 
-      {/* Servicos fotos */}
-      <div className="grid grid-cols-2 gap-3 mt-3 max-w-md mx-auto">
-        {[
-          {
-            src: "/images/carrosguincho/CARROSGUINHO-SERVICOS01.jpeg",
-            alt: "Serviço de guincho Carros Guincho 24h Vitória da Conquista",
-            label: "Serviço Guincho",
-          },
-          {
-            src: "/images/carrosguincho/CARROSGUINHO-SERVICOS02.jpeg",
-            alt: "Mecânica especializada Carros Guincho 24h Vitória da Conquista",
-            label: "Mecânica",
-          },
-        ].map((foto, i) => (
-          <motion.div
-            key={foto.src}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.1 }}
-            className="relative rounded-sm overflow-hidden group cursor-default"
-            style={{ border: "1px solid hsl(210 15% 18%)" }}
-          >
-            <img
-              src={foto.src}
-              alt={foto.alt}
-              className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div
-              className="absolute inset-0 flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              style={{
-                background:
-                  "linear-gradient(to top, hsl(0 65% 15% / 0.85) 0%, transparent 60%)",
-              }}
-            >
-              <span className="p-2 text-xs font-body font-semibold text-white uppercase tracking-wide">
-                {foto.label}
-              </span>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+
     </div>
 
     <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(210_15%_35%/0.25)] to-transparent" />

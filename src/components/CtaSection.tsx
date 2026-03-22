@@ -129,10 +129,10 @@ const CtaSection = () => (
         <div className="flex flex-col sm:flex-row justify-center gap-3 mt-2">
           <a
             href={PHONE_1}
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-body font-semibold text-[hsl(210_10%_75%)] text-base transition-all duration-200 hover:text-white hover:border-[hsl(210_15%_35%)]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-body font-semibold text-black text-base transition-all duration-200"
             style={{
-              background: "hsl(210 15% 10%)",
-              border: "1px solid hsl(210 15% 20%)",
+              background: "#BFEFFF",
+              border: "2px solid #000000",
             }}
             onClick={() => fireGACall("ligação_numero1_cta")}
           >
@@ -141,10 +141,10 @@ const CtaSection = () => (
           </a>
           <a
             href={PHONE_2}
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-body font-semibold text-[hsl(210_10%_75%)] text-base transition-all duration-200 hover:text-white hover:border-[hsl(210_15%_35%)]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-body font-semibold text-black text-base transition-all duration-200"
             style={{
-              background: "hsl(210 15% 10%)",
-              border: "1px solid hsl(210 15% 20%)",
+              background: "#BFEFFF",
+              border: "2px solid #000000",
             }}
             onClick={() => fireGACall("ligação_numero2_cta")}
           >
