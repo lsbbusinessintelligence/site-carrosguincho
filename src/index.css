@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep dark steel background */
+    --background: 210 15% 8%;
+    --foreground: 210 10% 92%;
+
+    /* Card surface — slightly lighter steel */
+    --card: 210 15% 11%;
+    --card-foreground: 210 10% 90%;
+
+    --popover: 210 15% 11%;
+    --popover-foreground: 210 10% 90%;
+
+    /* Primary dark metal */
+    --primary: 210 18% 6%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 12% 16%;
+    --secondary-foreground: 210 10% 88%;
+
+    --muted: 210 12% 18%;
+    --muted-foreground: 210 8% 55%;
+
+    /* ACCENT = Deep Red Metálico */
+    --accent: 0 70% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Chrome metallic */
+    --chrome: 210 12% 78%;
+    --chrome-light: 210 15% 92%;
+    --chrome-dark: 210 10% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 12% 20%;
+    --input: 210 12% 18%;
+    --ring: 0 70% 38%;
+
+    --radius: 0.5rem;
+
+    /* WhatsApp green metallic */
+    --whatsapp: 125 60% 25%;
+    --whatsapp-hover: 125 60% 30%;
+
+    /* Hero gradient: dark steel to slightly lighter gunmetal */
+    --hero-gradient: linear-gradient(160deg,
+      hsl(210 20% 5%) 0%,
+      hsl(210 18% 9%) 40%,
+      hsl(0 25% 10%) 100%
+    );
+
+    /* Metal shine gradient for cards/sections */
+    --metal-gradient: linear-gradient(135deg,
+      hsl(210 12% 14%) 0%,
+      hsl(210 10% 18%) 40%,
+      hsl(210 12% 13%) 100%
+    );
+
+    /* Red metal for accent sections */
+    --red-metal-gradient: linear-gradient(135deg,
+      hsl(0 65% 28%) 0%,
+      hsl(0 70% 34%) 50%,
+      hsl(0 65% 25%) 100%
+    );
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  /* Hero metal background */
+  .hero-gradient {
+    background: var(--hero-gradient);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Section with dark metal background */
+  .metal-section {
+    background: var(--metal-gradient);
+    position: relative;
+  }
+
+  /* Red metallic section */
+  .red-metal-section {
+    background: var(--red-metal-gradient);
+    position: relative;
+  }
+
+  /* Chrome text effect */
+  .text-chrome {
+    background: linear-gradient(
+      135deg,
+      hsl(210 15% 75%) 0%,
+      hsl(210 18% 95%) 30%,
+      hsl(210 12% 65%) 50%,
+      hsl(210 18% 90%) 70%,
+      hsl(210 15% 70%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Red gradient text */
+  .text-red-metal {
+    background: linear-gradient(135deg, hsl(0 70% 55%) 0%, hsl(0 65% 45%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Chrome border glow for CTA elements */
+  .chrome-glow {
+    box-shadow:
+      0 0 25px -5px hsl(210 20% 70% / 0.25),
+      0 0 50px -10px hsl(210 20% 70% / 0.12),
+      inset 0 1px 0 hsl(210 20% 90% / 0.08);
+  }
+
+  /* Red glow for accent elements */
+  .red-glow {
+    box-shadow:
+      0 0 30px -5px hsl(0 70% 38% / 0.5),
+      0 0 60px -10px hsl(0 70% 38% / 0.25);
+  }
+
+  /* WhatsApp green glow */
+  .whatsapp-glow {
+    box-shadow:
+      0 0 30px -5px hsl(125 60% 25% / 0.6),
+      0 0 60px -10px hsl(125 60% 25% / 0.3);
+  }
+
+  /* Metal card effect */
+  .metal-card {
+    background: var(--metal-gradient);
+    border: 1px solid hsl(210 15% 22%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .metal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(210 20% 65% / 0.3), transparent);
+    pointer-events: none;
+  }
+
+  .metal-card:hover {
+    border-color: hsl(0 70% 38% / 0.4);
+    box-shadow: 0 8px 32px -8px hsl(0 70% 38% / 0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+
+  /* Shield clip path for hero decorations */
+  .shield-shape {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  /* Angular badge — automotive shield style */
+  .angular-badge {
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+  }
+
+  /* Metal shimmer on text */
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      hsl(210 15% 75%) 0%,
+      hsl(210 18% 95%) 35%,
+      hsl(210 12% 65%) 50%,
+      hsl(210 18% 90%) 65%,
+      hsl(210 15% 75%) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+  }
+
+  /* Diagonal metal striping decoration */
+  .metal-stripe {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 4px,
+      hsl(210 15% 20% / 0.4) 4px,
+      hsl(210 15% 20% / 0.4) 8px
+    );
+  }
+
+  /* Star rating */
+  .star-gold {
+    color: hsl(45 95% 55%);
+  }
+}
