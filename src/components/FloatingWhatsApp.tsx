@@ -11,7 +11,7 @@ const FloatingWhatsApp = () => {
       {/* Floating Ligar button */}
       <motion.a
         href="tel:+5577991530506"
-        className="flex items-center justify-center gap-3 px-5 py-4 rounded-full shadow-2xl transition-all duration-200 group"
+        className="relative flex items-center justify-center gap-3 px-5 py-4 rounded-full shadow-2xl transition-all duration-200 group"
         style={{
           background: "#BFEFFF",
           border: "2px solid #000000",
@@ -51,7 +51,7 @@ const FloatingWhatsApp = () => {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-3 px-5 py-4 rounded-full shadow-2xl transition-all duration-200 group"
+        className="relative flex items-center justify-center gap-3 px-5 py-4 rounded-full shadow-2xl transition-all duration-200 group"
         style={{
           background: "linear-gradient(135deg, hsl(125 65% 22%) 0%, hsl(125 60% 28%) 50%, hsl(125 65% 20%) 100%)",
           border: "1px solid hsl(125 50% 35% / 0.6)",
