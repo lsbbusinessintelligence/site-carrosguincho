@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/5577991530506?text=Ol%C3%A1!%20Preciso%20de%20socorro%20em%20Vit%C3%B3ria%20da%20Conquista.%20%C3%89%20para%20guincho%20ou%20mec%C3%A2nica%3F";
+  "https://wa.me/5577991530506?text=Ol%C3%A1!%20Preciso%20de%20um%20atendimento%20de%20guincho%20ou%20mec%C3%A2nica%20automotiva.";
 
 const PHONE_1 = "tel:+5577988148551";
 const PHONE_2 = "tel:+5577991530506";

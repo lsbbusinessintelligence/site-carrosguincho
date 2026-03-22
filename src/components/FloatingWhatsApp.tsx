@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const WHATSAPP_URL =
-  "https://wa.me/5577991530506?text=Ol%C3%A1!%20Preciso%20de%20socorro%20em%20Vit%C3%B3ria%20da%20Conquista.%20%C3%89%20para%20guincho%20ou%20mec%C3%A2nica%3F";
+  "https://wa.me/5577991530506?text=Ol%C3%A1!%20Preciso%20de%20um%20atendimento%20de%20guincho%20ou%20mec%C3%A2nica%20automotiva.";
 
 const PHONE_URL = "tel:+5577991530506";
 
@@ -10,7 +10,7 @@ const FloatingWhatsApp = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-row items-end gap-3">
       {/* Floating Ligar button */}
       <motion.a
-        href={PHONE_URL}
+        href="tel:+5577991530506"
         className="flex items-center justify-center gap-3 px-5 py-4 rounded-full shadow-2xl transition-all duration-200 group"
         style={{
           background: "#BFEFFF",
